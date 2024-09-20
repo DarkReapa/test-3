@@ -9,20 +9,11 @@ NC='\033[0m' # No Color
 show_header() {
     clear # Очистка экрана
     echo -e "${RED}"
-    echo "███╗   ██╗██████╗ ██████╗ ██████╗ ████████╗███████╗ █████╗ ███╗   ███╗"
-    echo "████╗  ██║██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██╔══██╗████╗ ████║"
-    echo "██╔██╗ ██║██████╔╝██████╔╝██████╔╝   ██║   █████╗  ███████║██╔████╔██║"
-    echo "██║╚██╗██║██╔═══╝ ██╔═══╝ ██╔══██╗   ██║   ██╔══╝  ██╔══██║██║╚██╔╝██║"
-    echo "██║ ╚████║██║     ██║     ██║  ██║   ██║   ███████╗██║  ██║██║ ╚═╝ ██║"
-    echo "╚═╝  ╚═══╝╚═╝     ╚═╝     ╚═╝  ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝"
+    echo "IPv6 Broker I6P. Author DmitryIT"
     echo -e "${NC}"
     echo -e "${GREEN}------------------------------------------------"
     echo "Наши контакты:"
-    echo "Наш ТГ — https://t.me/nppr_team"
-    echo "Наш ВК — https://vk.com/npprteam"
-    echo "ТГ нашего магазина — https://t.me/npprteamshop"
-    echo "Магазин аккаунтов, бизнес-менеджеров ФБ и Google — https://npprteam.shop"
-    echo "Наш антидетект-браузер Antik Browser — https://antik-browser.com/"
+    echo "Наш ТГ — https://t.me/+cWRQCkgUzooyMTFi"
     echo -e "------------------------------------------------${NC}"
 }
 
@@ -58,13 +49,6 @@ show_final_message() {
     echo -e "${GREEN}# Ваша ссылка на скачивание архива с прокси - ${download_link}${NC}"
     echo -e "${GREEN}# Пароль к архиву - ${password}${NC}"
     echo -e "${GREEN}# Файл с прокси можно найти по адресу - ${local_path}${NC}"
-    echo -e "${GREEN}# Всегда ваш NPPRTEAM!${NC}"
-    echo -e "${GREEN}# Наши контакты:${NC}"
-    echo -e "${GREEN}# Наш ТГ — https://t.me/nppr_team${NC}"
-    echo -e "${GREEN}# Наш ВК — https://vk.com/npprteam${NC}"
-    echo -e "${GREEN}# ТГ нашего магазина — https://t.me/npprteamshop${NC}"
-    echo -e "${GREEN}# Магазин аккаунтов, бизнес-менеджеров ФБ и Google — https://npprteam.shop${NC}"
-    echo -e "${GREEN}# Наш антидетект-браузер Antik Browser — https://antik-browser.com/${NC}"
     # Нижняя рамка
     echo -e "${GREEN}##################################################${NC}"
 }
@@ -869,7 +853,7 @@ write_proxyserver_info;
 mv $proxy_dir/backconnect_proxies.list $proxy_dir/proxy.txt
 
 # Добавление шапки
-header="Наши контакты:\n===========================================================================\nНаш ТГ — https://t.me/nppr_team\nНаш ВК — https://vk.com/npprteam\nТГ нашего магазина — https://t.me/npprteamshop\nМагазин аккаунтов, бизнес-менеджеров ФБ и Google— https://npprteam.shop\nНаш антидетект-браузер Antik Browser — https://antik-browser.com/\n===========================================================================\n"
+header="Наши контакты:\n===========================================================================\nIPv6 Broker I6P. Author DmitryIT/\n===========================================================================\n"
 echo -e $header | cat - $proxy_dir/proxy.txt > temp && mv temp $proxy_dir/proxy.txt
 
 # Создание архива с паролем и загрузка на file.io
